@@ -1,16 +1,45 @@
 /* just some  styling*/
 body {
     text-align: center;
+}
 
+img {
+    background: url(../media/beach.jpg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-size: 100% 100%;
+    opacity: 0.4;
 }
 
 /* heart div class - in html i used just a simple html simbol entity for heart sign, you can use text or whatever u want*/
 
 .heart {
     font-size: 150px;
-    color: #FF6A6A;
-    animation: beat .25s infinite alternate;
+    color: #FF6A6A;/*#ed45e3*/
+    animation: beat .5s infinite alternate;
     transform-origin: center;
+}
+
+div.transbox
+{
+    width: 80%;
+    height: 80%;
+    margin:30px auto;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    /* for IE */
+    filter:alpha(opacity=60);
+    /* CSS3 standard */
+    opacity:0.6;
+    box-shadow: 10px 10px 50px #dddddd;
+}
+
+div.transbox p
+{
+    margin: 30px 40px;
 }
 
 /* Heart beat animation */
