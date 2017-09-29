@@ -3,40 +3,23 @@
 <head>
     <meta charset="UTF-8" />
     <title>Title</title>
+
+    <link href="../static/style/index.css" th:href="@{/style/heartbeat.css}" rel="stylesheet" media="screen"/>
     <link href="../static/style/heartbeat.css" th:href="@{/style/heartbeat.css}" rel="stylesheet" media="screen"/>
 </head>
 <body>
 <img />
     <div class="transbox">
-        <p>hello</p>
         <p th:inline="text">Hello.v.2</p>
-        <div class="heart">&#x2665;</div>
+        <div class="heart3">&#x2665;</div>
         <h1>Follow the heartbeat</h1>
+        <div id="vader" style="font-size: 40px;"></div>
+        <div id="luke" style="font-size: 40px;"></div>
     </div>
 
     <audio id="audio" autoplay="autoplay" th:hidden="false" controls="controls" loop="loop" preload="auto" src="../media/balloon.mp" />
+    <script src="../static/script/theater.js" th:src="@{/script/theater.js}"></script>
+    <script src="../static/script/index.js" th:src="@{/script/index.js}"></script>
 
-    <script type="text/javascript">
-        //--创建页面监听，等待微信端页面加载完毕 触发音频播放
-        document.addEventListener('DOMContentLoaded', function () {
-            function audioAutoPlay() {
-                var audio = document.getElementById('audio');
-                audio.play();
-                document.addEventListener("WeixinJSBridgeReady", function () {
-                    audio.play();
-                }, false);
-            }
-            audioAutoPlay();
-        });
-        //--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
-        document.addEventListener('touchstart', function () {
-            function audioAutoPlay() {
-                var audio = document.getElementById('audio');
-                audio.play();
-            }
-            audioAutoPlay();
-        });
-
-    </script>
 </body>
 </html>
