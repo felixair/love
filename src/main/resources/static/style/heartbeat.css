@@ -1,7 +1,7 @@
 /* heart div class - in html i used just a simple html simbol entity for heart sign, you can use text or whatever u want*/
 
 .heart {
-    font-size: 150px;
+    font-size: 100px;
     color: #FF6A6A;/*#ed45e3*/
     animation: beat .5s infinite alternate;
     transform-origin: center;
@@ -10,14 +10,14 @@
 div.transbox
 {
     width: 80%;
-    height: 1200px;
-    margin:30px auto;
+    height: 1400px;
+    margin:80px auto;
     background-color: #ffffff;
     border: 1px solid #dddddd;
     /* for IE */
     filter:alpha(opacity=60);
     /* CSS3 standard */
-    opacity:0.6;
+    opacity:0.4;
     box-shadow: 10px 10px 50px #dddddd;
     overflow-y: scroll;
 }
@@ -28,10 +28,6 @@ div.transbox p
     font-size: 40px;
 }
 
-div.transbox div {
-    margin: 30px 40px;
-    font-size: 40px;
-}
 
 /* Heart beat animation */
 @keyframes beat{

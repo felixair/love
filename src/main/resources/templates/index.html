@@ -2,22 +2,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8" />
-    <title>Title</title>
+    <title>For my love：S</title>
 
-    <link href="../static/style/index.css" th:href="@{/style/heartbeat.css}" rel="stylesheet" media="screen"/>
+    <link href="../static/style/index.css" th:href="@{/style/index.css}" rel="stylesheet" media="screen"/>
     <link href="../static/style/heartbeat.css" th:href="@{/style/heartbeat.css}" rel="stylesheet" media="screen"/>
 </head>
 <body>
 <img />
     <div class="transbox">
-        <p th:inline="text">Hello.v.2</p>
-        <div class="heart3">&#x2665;</div>
-        <h1>Follow the heartbeat</h1>
-        <div id="vader" style="font-size: 40px;"></div>
-        <div id="luke" style="font-size: 40px;"></div>
+        <p th:inline="text" style="font-size: 40px;">丫头 给我一首歌的时间</p>
+        <div class="heart">&#x2665;</div>
+        <div id="vader" class="type-style" style="font-size: 40px;"></div>
+        <div id="luke" class="type-style" style="font-size: 40px;"></div>
     </div>
 
-    <audio id="audio" autoplay="autoplay" th:hidden="false" controls="controls" loop="loop" preload="auto" src="../media/balloon.mp" />
+    <audio id="audio" autoplay="autoplay" th:hidden="true" controls="controls" loop="loop" preload="auto" src="../media/balloon.mp3" />
+    <script src="../static/script/jquery-1.11.2.min.js" th:src="@{/script/jquery-1.11.2.min.js}"></script>
     <script src="../static/script/theater.js" th:src="@{/script/theater.js}"></script>
     <script src="../static/script/index.js" th:src="@{/script/index.js}"></script>
 

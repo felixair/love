@@ -22,13 +22,10 @@ document.addEventListener('touchstart', function () {
 var theater = theaterJS({ locale: 'en' })
 
 theater
-    .addActor('vader', { speed: 0.1, accuracy: 0.6 })
-    .addActor('luke')
-    .addScene('vader:但是观点死否收到收人发布到扶伤观点.', 600)
-    .addScene('luke:个人观点个?', 400)
-    .addScene('vader:是否收到个.', 400)
-    .addScene('luke:他个人发布的...', -3, '!!! ', 600, 'No! ', 600)
-    .addScene('luke:That\'s 吊死扶伤 士大夫是!', 600)
-    .addScene('luke:That\'s 士大夫!', 400)
-    .addScene('vader:Search your feelings.', 1600)
-    .addScene(theater.replay.bind(theater))
+    .addActor('vader')
+    .addScene('vader:好久不见<br/> 再次相遇在夏天<br/> 内心又起了波澜<br/> 三年前的见面<br/> 成为了今天的铺垫<br/> 过了三个月的时间<br/> 很庆幸没有厌烦我的缺点<br/> 每一次<br/> 听到你的声音<br/> 看到你的脸<br/> 大脑就停止了运转<br/> 只有你占据我的视线<br/> 我们<br/> 一起去影院<br/> 一起去餐馆<br/> 一起去ktv量贩<br/> 一起去海边<br/> 一起去超市 一起去母婴店<br/> 今后<br/> 牵着你的手<br/> 我们<br/> 一起看蓝天白云<br/>一起看浩瀚星空<br/> 一起看春夏秋冬<br/> 一起爬山<br/> 一起旅行<br/> 一起做你爱吃的肉肉<br/> 一起...<br/>')
+    .addScene(function (done) {
+        // do stuff
+        done()
+    })
+    // .addScene(theater.replay.bind(theater))
