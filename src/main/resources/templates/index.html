@@ -16,7 +16,8 @@
         <div id="luke" class="type-style" style="font-size: 40px;"></div>
     </div>
 
-    <audio id="audio" autoplay="autoplay" th:hidden="true" controls="controls" loop="loop" preload="auto" src="../media/balloon.mp3" />
+    <audio id="audio" autoplay="autoplay" th:hidden="true" controls="controls" loop="loop"
+           preload="auto" src="../static/media/balloon.mp3" th:src="@{/media/balloon.mp3}" />
     <script src="../static/script/jquery-1.11.2.min.js" th:src="@{/script/jquery-1.11.2.min.js}"></script>
     <script src="../static/script/theater.js" th:src="@{/script/theater.js}"></script>
     <script src="../static/script/index.js" th:src="@{/script/index.js}"></script>
